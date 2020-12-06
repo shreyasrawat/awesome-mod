@@ -1,0 +1,52 @@
+
+modLoader="javafml"
+
+loaderVersion="[31,)"
+
+issueTrackerURL="http://my.issue.tracker/"
+
+[[mods]]
+
+modId="redruby"
+
+version="1.15.2-1.0.0"
+
+displayName="RedRuby Mod"
+
+updateJSONURL="http://shreyasrawat.me/"
+
+displayURL="http://redruby.com/"
+
+logoFile="ruby_block.png"
+
+credits="Thanks to my family for helping me on this mod!"
+
+authors="Shreyas Rawat"
+
+description='''
+Red Ruby mod for Minecraft.
+'''
+
+[[dependencies.examplemod]]
+
+    modId="forge"
+
+    mandatory=true
+
+    versionRange="[31,)"
+
+    ordering="NONE"
+
+    side="BOTH"
+
+[[dependencies.examplemod]]
+
+    modId="minecraft"
+
+    mandatory=true
+
+    versionRange="[1.15.2]"
+
+    ordering="NONE"
+
+    side="BOTH"
