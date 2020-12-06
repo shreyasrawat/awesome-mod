@@ -9,7 +9,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IWorldReader;
 import net.minecraftforge.common.ToolType;
 
-    public class RubyOre extends OreBlock {
+    public class RubyOre extends OreBlock{
 
         public RubyOre() {
             super(Block.Properties.create(Material.IRON)

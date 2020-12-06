@@ -1,6 +1,5 @@
 {
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "redruby:blocks/ruby_block"
+  "variants": {
+    "": { "model": "redruby:block/ruby_ore" }
   }
 }
