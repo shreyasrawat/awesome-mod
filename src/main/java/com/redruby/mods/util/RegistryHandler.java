@@ -3,6 +3,7 @@ package com.redruby.mods.util;
 import com.redruby.mods.blocks.BlockItemBase;
 import com.redruby.mods.blocks.RubyBlock;
 import com.redruby.mods.items.ItemBase;
+import com.redruby.mods.items.PoisonApple;
 import com.redruby.mods.tools.ModItemTier;
 import com.redruby.mods.RedRubyMain;
 import com.redruby.mods.armor.ModArmorMaterial;
@@ -29,6 +30,7 @@ public class RegistryHandler {
 
     // Items
     public static final RegistryObject<Item> RUBY = Items.register("ruby", ItemBase::new);
+    public static final RegistryObject<PoisonApple> POISON_APPLE = Items.register("poison_apple", PoisonApple::new);
 
     // Tools
     public static final RegistryObject<SwordItem> RUBY_SWORD = Items.register("ruby_sword", ()->
