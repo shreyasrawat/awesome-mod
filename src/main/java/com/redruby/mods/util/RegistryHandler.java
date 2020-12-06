@@ -1,13 +1,12 @@
 package com.redruby.mods.util;
 
-import BlockItemBase;
+import com.redruby.mods.RedRubyMain;
+import com.redruby.mods.armor.ModArmorMaterial;
 import com.redruby.mods.blocks.RubyBlock;
 import com.redruby.mods.blocks.RubyOre;
 import com.redruby.mods.items.ItemBase;
 import com.redruby.mods.items.PoisonApple;
 import com.redruby.mods.tools.ModItemTier;
-import com.redruby.mods.RedRubyMain;
-import com.redruby.mods.armor.ModArmorMaterial;
 import net.minecraft.block.Block;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
