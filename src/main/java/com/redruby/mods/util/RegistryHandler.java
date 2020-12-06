@@ -1,7 +1,8 @@
 package com.redruby.mods.util;
 
-import com.redruby.mods.blocks.BlockItemBase;
+import BlockItemBase;
 import com.redruby.mods.blocks.RubyBlock;
+import com.redruby.mods.blocks.RubyOre;
 import com.redruby.mods.items.ItemBase;
 import com.redruby.mods.items.PoisonApple;
 import com.redruby.mods.tools.ModItemTier;
@@ -18,9 +19,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class RegistryHandler {
 
     public static final DeferredRegister<Item> Items
-            = new DeferredRegister<>(ForgeRegistries.ITEMS, RedRubyMain.MOD_ID);
+            = DeferredRegister.create(ForgeRegistries.ITEMS, RedRubyMain.MOD_ID);
     public static final DeferredRegister<Block> BLOCKS
-            = new DeferredRegister<>(ForgeRegistries.BLOCKS, RedRubyMain.MOD_ID);
+            = DeferredRegister.create(ForgeRegistries.BLOCKS, RedRubyMain.MOD_ID);
 
 
     public static void init() {
@@ -42,7 +43,7 @@ public class RegistryHandler {
     public static final RegistryObject<AxeItem> RUBY_AXE = Items.register("ruby_axe", ()->
             new AxeItem(ModItemTier.RUBY, 0, -2.8F, new Item.Properties().group(RedRubyMain.TAB)));
     public static final RegistryObject<HoeItem> RUBY_HOE = Items.register("ruby_hoe", ()->
-            new HoeItem(ModItemTier.RUBY, -1.0F, new Item.Properties().group(RedRubyMain.TAB)));
+            new HoeItem(ModItemTier.RUBY, -3,-1.0F, new Item.Properties().group(RedRubyMain.TAB)));
 
     // Armor
     public static final RegistryObject<ArmorItem> RUBY_HELMET = Items.register("ruby_helmet", ()->
@@ -58,9 +59,12 @@ public class RegistryHandler {
             new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlotType.FEET, new Item.Properties().group(RedRubyMain.TAB)));
     // Blocks
     public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
+    public static final RegistryObject<Block> RUBY_ORE = BLOCKS.register("ruby_ore", RubyOre::new);
 
     // Block Items
     public static final RegistryObject<Item> RUBY_BLOCK_ITEM = Items.register("ruby_block",
             ()-> new BlockItemBase(RUBY_BLOCK.get()));
+    public static final RegistryObject<Item> RUBY_ORE_ITEM = Items.register("ruby_ore",
+            ()-> new BlockItemBase(RUBY_ORE.get()));
 
 }
