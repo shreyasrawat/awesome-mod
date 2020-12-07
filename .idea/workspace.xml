@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14e9008d-56f6-4c95-8164-b7d370441a36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/redruby/mods/items/PoisonApple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/redruby/models/item/poison_apple.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/redruby/textures/items/poison_apple.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redruby/mods/util/RegistryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redruby/mods/util/RegistryHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/redruby/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/redruby/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/redruby/textures/items/ruby_sword.png" beforeDir="false" />
-    </list>
+    <list default="true" id="14e9008d-56f6-4c95-8164-b7d370441a36" name="Default Changelist" comment="Migrated to 1.16.1 and added Ruby Ore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +49,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -90,6 +84,12 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/assets/redruby/models/item" />
+      <recent name="$PROJECT_DIR$/src/main/resources/assets/redruby/models/block" />
+      <recent name="$PROJECT_DIR$/src/main/resources/assets/redruby/blockstates" />
+      <recent name="$PROJECT_DIR$/src/main/resources/data/redruby/loot_tables/blocks" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.redruby-mod [runClient]">
@@ -158,12 +158,86 @@
       <option name="project" value="LOCAL" />
       <updated>1607218892484</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added poison apple">
+      <created>1607231759215</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607231759215</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed loading error and added sword texture.">
+      <created>1607235155576</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607235155576</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated to 1.16.1">
+      <created>1607238492901</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607238492901</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fixed errors.">
+      <created>1607282454532</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607282454532</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed errors.">
+      <created>1607283465149</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607283465149</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Migrated to 1.16.1 and added Ruby Ore">
+      <created>1607306412342</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607306412342</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Migrated to 1.16.1 and added Ruby Ore">
+      <created>1607320447006</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607320447006</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/Users/shreyasrawat/Documents/GitHub/redruby-mod/src/main/java/com/Whichaditiya" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -171,11 +245,21 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial check-in for my first Minecraft Mod." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial check-in for my first Minecraft Mod." />
+    <MESSAGE value="added poison apple" />
+    <MESSAGE value="Fixed loading error and added sword texture." />
+    <MESSAGE value="Updated to 1.16.1" />
+    <MESSAGE value="Fixed errors." />
+    <MESSAGE value="Migrated to 1.16.1 and added Ruby Ore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Migrated to 1.16.1 and added Ruby Ore" />
   </component>
 </project>
