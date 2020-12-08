@@ -1,4 +1,4 @@
-package com.redruby.mods.util;
+package com.redruby.mods.blocks;
 import com.redruby.mods.RedRubyMain;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;

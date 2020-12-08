@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "rir",
+    "ifi",
+    "iii"
+  ],
+  "key":
+  {
+    "f":
+    {
+      "item": "minecraft:furnace"
+    },
+    "r":
+    {
+      "item": "redruby:ruby"
+    },
+    "i":
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "redruby:oven",
+    "count": 1
+  }
+}

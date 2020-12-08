@@ -2,8 +2,7 @@ package com.redruby.mods.util;
 
 import com.redruby.mods.RedRubyMain;
 import com.redruby.mods.armor.ModArmorMaterial;
-import com.redruby.mods.blocks.RubyBlock;
-import com.redruby.mods.blocks.RubyOre;
+import com.redruby.mods.blocks.*;
 import com.redruby.mods.items.ItemBase;
 import com.redruby.mods.items.PoisonApple;
 import com.redruby.mods.tools.ModItemTier;
@@ -59,11 +58,12 @@ public class RegistryHandler {
     // Blocks
     public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
     public static final RegistryObject<Block> RUBY_ORE = BLOCKS.register("ruby_ore", RubyOre::new);
-
+    public static final RegistryObject<Block> OVEN = BLOCKS.register("oven", Oven::new);
     // Block Items
     public static final RegistryObject<Item> RUBY_BLOCK_ITEM = Items.register("ruby_block",
             ()-> new BlockItemBase(RUBY_BLOCK.get()));
     public static final RegistryObject<Item> RUBY_ORE_ITEM = Items.register("ruby_ore",
             ()-> new BlockItemBase(RUBY_ORE.get()));
-
+    public static final RegistryObject<Item> OVEN_ITEM = Items.register("oven",
+            ()-> new BlockItemBase(OVEN.get()));
 }
