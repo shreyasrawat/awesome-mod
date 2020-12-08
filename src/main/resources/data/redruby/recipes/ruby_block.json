@@ -10,11 +10,11 @@
   {
     "x":
     {
-      "item": "redruby:ruby"
+      "tag": "redruby:gems"
     },
     "d":
     {
-      "item": "minecraft:diamond"
+      "tag": "forge:gems/diamond"
     }
   },
   "result":

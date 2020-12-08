@@ -13,7 +13,7 @@ import org.apache.logging.log4j.Logger;
 
 @Mod(RedRubyMain.MOD_ID)
 public class RedRubyMain {
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "redruby";
 
     public RedRubyMain() {
