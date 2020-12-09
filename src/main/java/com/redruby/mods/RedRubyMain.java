@@ -1,6 +1,7 @@
 package com.redruby.mods;
 
-import com.redruby.mods.util.RegistryHandler;
+import com.redruby.mods.init.ModBlocks;
+import com.redruby.mods.init.ModItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -20,7 +21,8 @@ public class RedRubyMain {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-        RegistryHandler.init();
+        ModBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ModItems.Items.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -29,10 +31,8 @@ public class RedRubyMain {
 
     private void doClientStuff(final FMLClientSetupEvent event) { }
 
-    public static final ItemGroup TAB = new ItemGroup("redRubyTab"){
+    public static final ItemGroup TAB = new ItemGroup("redRubyTab") {
         @Override
-        public ItemStack createIcon() {
-            return new ItemStack(RegistryHandler.RUBY.get());
-        }
+        public ItemStack createIcon() {return new ItemStack(ModItems.RUBY.get());}
     };
 }

@@ -1,7 +1,8 @@
 package com.redruby.mods.events;
 
 import com.redruby.mods.RedRubyMain;
-import com.redruby.mods.util.RegistryHandler;
+import com.redruby.mods.init.ModBlocks;
+import com.redruby.mods.init.ModItems;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -27,13 +28,13 @@ public class ModClientEvents {
             RedRubyMain.LOGGER.info("Player tried to jump with a stick!");
             World world = player.getEntityWorld();
             world.setBlockState(player.func_233580_cy_().add(0, -1, 0)
-                    , RegistryHandler.RUBY_BLOCK.get().getDefaultState());
+                    , ModBlocks.RUBY_BLOCK.get().getDefaultState());
         }
     }
 
     @SubscribeEvent
     public static void onDamageSheep(AttackEntityEvent event) {
-        if (event.getEntityLiving().getHeldItemMainhand().getItem() == RegistryHandler.POISON_APPLE.get()) {
+        if (event.getEntityLiving().getHeldItemMainhand().getItem() == ModItems.POISON_APPLE.get()) {
             if (event.getTarget().isAlive()) {
                 LivingEntity target = (LivingEntity) event.getTarget();
                 if (target instanceof SheepEntity) {

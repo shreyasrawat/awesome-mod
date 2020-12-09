@@ -1,6 +1,6 @@
-package com.redruby.mods.tools;
+package com.redruby.mods.util.enums;
 
-import com.redruby.mods.util.RegistryHandler;
+import com.redruby.mods.init.ModItems;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 
@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 public enum ModItemTier implements IItemTier {
 
     RUBY(3, 800, 10.0f, 3.0f, 12, () -> {
-        return Ingredient.fromItems(RegistryHandler.RUBY.get());
+        return Ingredient.fromItems(ModItems.RUBY.get());
     });
 
     private final int harvestLevel;

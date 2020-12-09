@@ -2,7 +2,7 @@ package com.redruby.mods.world.gen;
 
 
 import com.redruby.mods.RedRubyMain;
-import com.redruby.mods.util.RegistryHandler;
+import com.redruby.mods.init.ModBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.pattern.BlockMatcher;
@@ -31,13 +31,13 @@ public class ModOreGen {
 
             if (biome.getCategory() == Biome.Category.NETHER) {
                 genOre(biome, 12, 5, 5, 80, OreFeatureConfig.FillerBlockType.NETHERRACK,
-                        RegistryHandler.RUBY_ORE.get().getDefaultState(), 4);
+                        ModBlocks.RUBY_ORE.get().getDefaultState(), 4);
             } else if (biome.getCategory() == Biome.Category.THEEND) {
-                genOre(biome, 18, 3, 5, 50, END_STONE, RegistryHandler.RUBY_ORE.get().getDefaultState(), 12);
+                genOre(biome, 18, 3, 5, 50, END_STONE, ModBlocks.RUBY_ORE.get().getDefaultState(), 12);
 
             } else {
                 genOre(biome, 15, 8, 5, 50, OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-                        RegistryHandler.RUBY_ORE.get().getDefaultState(), 6);
+                        ModBlocks.RUBY_ORE.get().getDefaultState(), 6);
 
             }
         }
