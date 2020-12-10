@@ -3,6 +3,7 @@ package com.redruby.mods.init;
 import com.redruby.mods.RedRubyMain;
 import com.redruby.mods.blocks.BlockItemBase;
 import com.redruby.mods.items.ItemBase;
+import com.redruby.mods.items.ModSpawnEggItem;
 import com.redruby.mods.items.PoisonApple;
 import com.redruby.mods.util.enums.ModArmorMaterial;
 import com.redruby.mods.util.enums.ModItemTier;
@@ -19,6 +20,9 @@ public class ModItems {
     // Items
     public static final RegistryObject<Item> RUBY = Items.register("ruby", ItemBase::new);
     public static final RegistryObject<PoisonApple> POISON_APPLE = Items.register("poison_apple", PoisonApple::new);
+
+    public static final RegistryObject<ModSpawnEggItem> HOG_SPAWN_EGG = Items.register("hog_spawn_egg",
+            () -> new ModSpawnEggItem(ModEntityTypes.HOG, 0xF1BF7B, 0x705128, new Item.Properties().group(RedRubyMain.TAB)));
 
     // Block Items
     public static final RegistryObject<Item> RUBY_BLOCK_ITEM = Items.register("ruby_block",
