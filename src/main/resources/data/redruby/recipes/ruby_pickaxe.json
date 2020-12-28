@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rrr",
+    " / ",
+    " / "
+  ],
+  "key": {
+    "r": {
+      "item": "redruby:ruby"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "redruby:ruby_pickaxe",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rpr",
+    "pap",
+    "rrr"
+  ],
+  "key": {
+    "r": {
+      "item": "redruby:ruby"
+    },
+    "p": {
+      "item": "minecraft:poisonous_potato"
+    },
+    "a": {
+      "item": "minecraft:apple"
+    }
+  },
+  "result": {
+    "item": "redruby:poison_apple",
+    "count": 1
+  }
+}
